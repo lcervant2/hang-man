@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<title>THE HANGMAN GAME</title>
+    <meta charset="UTF-8">
+  	<link rel="stylesheet" type="text/css" href="styles/style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+	
+<div>
+	<header>
+    <main>
+  		<h1>THE HANGMAN GAME</h1>
+    </main>
+	</header>
+  <nav>
+  <a href="#">Instructions</a> |  <a href="Game">New Game</a>
+</nav>
+ <p>First, look up the demo, which shows the finished procuct. Hangman is word-guessing game.  One player picks a secret word, and the other player tries to guess it</p>
+  <div id="intro-box">
+    <h2>What's your name?</h2>
+    <input type="text" id="users-name"/>
+    <input type="submit" id="submit-name" value="Enter name"/>
+    <audio id="start-audio">
+      <source src="http://themushroomkingdom.net/sounds/wav/drm64_wario5.wav" type="audio/wav" />
+    </audio>
+  </div>
+  <div id="game-box" class="hide">
+    <h2 id="word-display"></h2>
+    <input type="text" id="input-letter"/>
+    <button id="submit-letter">Enter letter</button>
+    <audio id="wrong-audio">
+      <source src="http://themushroomkingdom.net/sounds/wav/mlpit/mlpit_baby_bowser_oh_no.wav" type="audio/wav"/>
+    </audio>
+    <audio id="correct-audio">
+      <source src="http://themushroomkingdom.net/sounds/wav/drm64_mario3.wav" type="audio/wav"/>
+    </audio>
+  </div>
+  <div id="winner" class="hide">
+    <h2>You win!</h2>
+    <p id="winner-text"></p>
+    <audio id="winner-audio">
+      <source src="http://themushroomkingdom.net/sounds/wav/smb/smb_stage_clear.wav" type="audio/wav" />
+    </audio>
+  </div>
+  <p> Interacting <strong> with </strong> a <i>html</i> player.</p>
+  <br>
+<footer class="clearfix">
+    <p class="copyright">Copyright 2017</p>
+    <p class="message">Made with &#9836; by<span class="name"> Luis Cervntes</span></p>
+</footer>
+</div>  
+</body>
+<script src="scripts/logic.js"></script>
+</html>
